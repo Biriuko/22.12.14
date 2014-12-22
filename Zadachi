@@ -122,3 +122,61 @@ void main ()
 	system ("pause");
 }
 /*
+
+
+
+
+
+
+//найти наибольший общий делитель целых положительных чисел а,b,с. (Дано три числа, найти наибольший делитель)
+
+#include <iostream>
+using namespace std;
+
+
+void main()
+{
+	int A, B, C, Max;
+	cout << "Enter A, B, C:\n";
+	cin >> A >> B >> C;
+
+	for (int i=1; (i<A)||(i<B)||(i<C); i++)
+		if (!(A%i)&&!(B%i)&&!(C%i)) 
+		{
+			Max = i;
+		}
+		cout << "The greatest common divisor " << Max << endl;
+		system ("pause");
+}
+/*
+#include <iostream>
+using std::cout;
+using std::cin;
+using std::endl;
+
+
+
+void main()
+{
+	int a=0,b=0,c=0, common = 0;
+	cout <<"input A B C"<<endl;
+	cin >>a>>b>>c;
+
+	if (a >= b && a >= c)        
+		common = a;
+	else
+	if (b > a && b >= c)
+		common = b;
+	else
+		common = c;               
+	while(common>0){
+	if(a%common == 0 && b%common == 0 && c%common == 0){
+		cout<<common << " is the biggest common delitel"<<endl;
+		break;
+	}
+	common--;
+	}
+
+}
+*/
+
