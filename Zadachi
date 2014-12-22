@@ -1,0 +1,71 @@
+// Написать программу вычисления сумы состоящей из четных и кубов нечетных чисел от 1 до n. n - вводится с клавиатуры.
+
+#include <iostream>
+using namespace std;
+
+void main()
+{
+	int n;
+	cout << "Enter number: ";
+	cin >> n;
+
+	int sum = 0;
+	
+	for (int i = 1; i <= n; i++)
+	
+		if (i % 2) 
+			sum +=i;
+		else
+			sum += i * i * i;
+
+	cout << " " << sum <<  endl;
+
+	system ("pause");
+}
+
+
+
+
+// Написать программу выбора наименьшего из 10 вводимых чисел
+
+#include <iostream>
+using namespace std;
+
+void main()
+{
+	int myInt = 0, min = 0;
+
+	for (int i = 1; i <= 10; i++)
+	{
+		cout << "Input number "  << i << endl;
+		cin >> myInt;
+
+		if (myInt < min || i == 1)
+			min = myInt;
+	}
+	cout << min << " is minimum" << endl;
+
+	system ("pause");
+}
+
+/*
+void main()
+{
+	int N, N1;
+	cin >> N;
+	for (int i = 2; i <= 10; i++)
+	{
+		cin >> N1;
+		if (N1 < N)
+		{
+			N = N1;
+		}
+	}
+	cout << N << endl;
+}
+
+
+
+
+
+
