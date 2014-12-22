@@ -72,6 +72,7 @@ void main()
 //Дано 10 целых чисел. Определить образуют ли они возрастающую последовательность.
 
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 void main()
