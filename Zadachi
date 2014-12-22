@@ -69,3 +69,55 @@ void main()
 
 
 
+//Дано 10 целых чисел. Определить образуют ли они возрастающую последовательность.
+
+#include <iostream>
+using namespace std;
+
+void main()
+{
+	int Min = 0;
+	int N, a;
+	for (int i = 0; i < 10; i++)
+	{
+		cout << "Input the number:\t";
+		cin >> N;
+
+		if ((N > Min) && (N != Min))
+		{
+			Min = N;
+		}
+		else
+		{
+			cout << "No" << endl;
+			Min = 0;
+			break;
+		}
+	}
+	if (Min)
+	{
+		cout << "Yes" << endl;
+	}
+}
+
+void main ()
+{
+	int num = 0, lastNum = 0;
+	for (int i = 0; i < 10; i++)
+	{
+		lastNum = num;
+		cout << "Enter number " << i+1 << endl;
+		cin >> num;
+
+		if (i > 0 && num <= lastNum)
+		{
+			cout << "Not growing" << endl;
+			break;
+		}
+		if (i == 9)
+			cout << "Growing extension" << endl;
+		lastNum = num;
+	}
+	system ("pause");
+}
+/*
